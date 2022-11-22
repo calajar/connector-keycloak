@@ -198,6 +198,8 @@
                     <groupId>com.evolveum.midpoint.gui</groupId>
                     <artifactId>admin-gui</artifactId>
                     <version>4.8.2</version>
+                    <type>jar</type>
+                    <classifier>classes</classifier>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
@@ -208,8 +210,6 @@
                         <exclusion>
                             <groupId>org.yaml</groupId>
                             <artifactId>snakeyaml</artifactId>
-                        </exclusion>
-                    </exclusions>
                 </dependency>
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
