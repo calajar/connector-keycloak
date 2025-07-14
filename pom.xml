@@ -6,7 +6,7 @@
     <parent>
         <artifactId>connector-parent</artifactId>
         <groupId>com.evolveum.polygon</groupId>
-        <version>1.5.0.0</version>
+        <version>1.5.2.0</version>
         <relativePath></relativePath>
     </parent>
 
@@ -97,12 +97,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.5.3</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.surefire</groupId>
                         <artifactId>surefire-junit-platform</artifactId>
-                        <version>2.22.2</version>
+                        <version>3.5.3</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -110,7 +110,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.8</version>
+                <version>1.7.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
@@ -122,7 +122,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -136,7 +136,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.11.2</version>
                 <configuration>
                     <source>${project.source.version}</source>
                     <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
@@ -153,7 +153,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.6</version>
+                <version>3.2.8</version>
                 <configuration>
                     <gpgArguments>
                         <arg>--pinentry-mode</arg>
@@ -178,7 +178,7 @@
             <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-admin-client</artifactId>
-                <version>24.0.2</version>
+                <version>26.0.6</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -197,7 +197,7 @@
                 <dependency>
                     <groupId>com.evolveum.midpoint.gui</groupId>
                     <artifactId>admin-gui</artifactId>
-                    <version>4.8.2</version>
+                    <version>4.8.9-SNAPSHOT</version>
                     <type>jar</type>
                     <classifier>classes</classifier>
                     <scope>provided</scope>
@@ -206,10 +206,10 @@
                     <groupId>org.testng</groupId>
                     <artifactId>testng</artifactId>
                     <scope>test</scope>
-                    <exclusions>
+                    <!--<exclusions>
                         <exclusion>
                             <groupId>org.yaml</groupId>
-                            <artifactId>snakeyaml</artifactId>
+                            <artifactId>snakeyaml</artifactId>-->
                 </dependency>
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
@@ -232,7 +232,7 @@
                 <dependency>
                     <groupId>net.bytebuddy</groupId>
                     <artifactId>byte-buddy</artifactId>
-                    <version>1.14.9</version>
+                    <version>1.17.6</version>
                     <scope>provided</scope>
                 </dependency>
             </dependencies>
@@ -245,7 +245,7 @@
                     <artifactId>admin-gui</artifactId>
                     <type>jar</type>
                     <classifier>classes</classifier>
-                    <version>4.4.8</version>
+                    <version>4.8.9-SNAPSHOT</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
@@ -262,19 +262,19 @@
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
                     <artifactId>connector-framework</artifactId>
-                    <version>1.5.1.10</version>
+                    <version>1.5.2.0</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
                     <artifactId>connector-framework-internal</artifactId>
-                    <version>1.5.1.10</version>
+                    <version>1.5.2.0</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
                     <artifactId>connector-framework-contract</artifactId>
-                    <version>1.5.1.10</version>
+                    <version>1.5.2.0</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
@@ -326,7 +326,7 @@
                     <artifactId>admin-gui</artifactId>
                     <type>jar</type>
                     <classifier>classes</classifier>
-                    <version>4.0.4</version>
+                    <version>4.8.9-SNAPSHOT</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
@@ -343,19 +343,19 @@
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
                     <artifactId>connector-framework</artifactId>
-                    <version>1.5.0.10</version>
+                    <version>1.5.2.0</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
                     <artifactId>connector-framework-internal</artifactId>
-                    <version>1.5.0.10</version>
+                    <version>1.5.2.0</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
                     <groupId>net.tirasa.connid</groupId>
                     <artifactId>connector-framework-contract</artifactId>
-                    <version>1.5.0.10</version>
+                    <version>1.5.2.0</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
